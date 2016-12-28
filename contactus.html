@@ -1,0 +1,83 @@
+<html>
+<title>Falu-TV</title>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+<header class="menu">
+<div class="logo">
+<div class="lg">
+<a href="index.html"> <img src="css/img/logo.png"></img> </a>
+</div>
+</div>
+  
+        <ul>
+           <div class="nav">
+              
+              <li><a href="megrendeles.html">Megrendelés</a></li>
+              <li><a href="tv.html">TV</a></li>           
+              <li><a href="internet.html">Internet</a></li>
+              <li><a href="telefon.html">Telefon</a></li>
+          </div>
+    </ul>
+  
+
+</header>
+
+<div id="formContainer">
+  <h1>Megrendelés vagy módosítás</h1>
+<table class="paramlist admintable"><tbody><tr><td valign="top" class="key">Név:*</td><td class="paramlist_value"><input class="csekk_nev_ alapinput" name="csekk_nev" id="csekk_nev" type="text" value="">     <input type="hidden" name="mandatory_fields[]" value="csekk_nev">
+    <input type="hidden" name="mandatory_functions[]" value="mandatoryCheck"> 
+    <input type="hidden" name="mandatory_texts[]" value="">   
+    <span class="span_error"></span></td><td></td></tr><tr><td valign="top" class="key">Cím:*</td><td class="paramlist_value"><input class="csekk_cim_ alapinput" name="csekk_cim" id="csekk_cim" type="text" value="">     <input type="hidden" name="mandatory_fields[]" value="csekk_cim">
+    <input type="hidden" name="mandatory_functions[]" value="mandatoryCheck"> 
+    <input type="hidden" name="mandatory_texts[]" value="">   
+    <span class="span_error"></span></td><td></td></tr><tr><td valign="top" class="key">Telefon:*</td><td class="paramlist_value"><input class="tel_ alapinput" name="tel" id="tel" type="text" value="">     <input type="hidden" name="mandatory_fields[]" value="tel">
+    <input type="hidden" name="mandatory_functions[]" value="mandatoryCheck"> 
+    <input type="hidden" name="mandatory_texts[]" value="">   
+    <span class="span_error"></span></td><td></td></tr><tr><td valign="top" class="key">E-mail cím:</td><td class="paramlist_value"><input class="email_ alapinput" name="email" id="email" type="text" value=""> <span class="span_error"></span></td><td></td></tr><tr><td valign="top" class="key">Szolgáltatási helykód:</td><td class="paramlist_value"><input class="ugyfelszam_ alapinput" name="ugyfelszam" id="ugyfelszam" type="text" value=""> <span class="span_error"></span></td><td></td></tr><tr><td valign="top" class="key">Megjegyzés:</td><td class="paramlist_value"><textarea class="megjegyzes_ alapinput" rows="10" cols="30" name="megjegyzes"></textarea><span class="span_error"></span></td><td></td></tr></tbody></table>                <a name="rendben" onclick="$('task').value='check_form'; $('adminForm').submit();" class="button">Megrendelem</a>
+</div>
+
+
+<footer>
+<div class="footr">
+  <p class="contactus1">
+   KAPCSOLAT:
+FALU-TV SZOLGÁLTATÓ KFT.
+Székhely és Telephely címe: 9021 Győr, Árpád út 14.
+Telefonszám:  06-30/9292-997, 06-96/526-407
+Telefaxszám:  06-96/526-408
+E-mail: falu-tv@falu-tv.hu
+</p>
+    <p class="contactus2">
+Nyitvatartási idej:
+
+Hétfő - 09.00-17.00 
+Kedd -  09.00-17.00
+Szerda -  09.00-17.00
+Csütörtök -  09.00-17.00
+Péntek -  09.00-17.00
+
+</p>
+  
+  <div id="map-canvas"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+
+  </div>
+</div>
+</footer>
+
+
+</article>
+
+</body>
+
+

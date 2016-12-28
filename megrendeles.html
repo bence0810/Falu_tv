@@ -32,6 +32,182 @@
 
 </header>
 
+<div class="telepules">
+
+  <h1>VÁLASSZON TELEPÜLÉST</h1>
+  <select name="telepules_id" id="telepules_id" class="telepules_id_ alapinput" onchange="getmodselect(); torolszolg();$('task').value='keep_form'; $('adminForm').submit();"><option value="" selected="selected">Kérem, válasszon települést!</option>
+    <option value="28">Bakonypéterd</option>
+    <option value="31">Bakonyszentlászló</option>
+    <option value="7">Bőny</option>
+    <option value="19">Csót</option>
+    <option value="27">Écs</option>
+    <option value="15">Feketeerdő</option>
+    <option value="6">Győrság</option>
+    <option value="1">Győrújbarát</option>
+    <option value="14">Hédervár</option>
+    <option value="18">Lipót</option>
+    <option value="13">Lovászpatona</option>
+    <option value="16">Máriakálnok</option>
+    <option value="8">Nagyszentjános</option>
+    <option value="20">Nyalka</option>
+    <option value="2">Nyúl</option>
+    <option value="3">Pannonhalma</option>
+    <option value="17">Pápateszér</option>
+    <option value="5">Pázmándfalu</option>
+    <option value="26">Ravazd</option>
+    <option value="29">Románd</option>
+    <option value="10">Sokorópátka</option>
+    <option value="22">Somlószőlős</option>
+    <option value="4">Tápszentmiklós</option>
+    <option value="9">Tényő</option>
+    <option value="21">Töltéstava</option>
+    <option value="11">Veszprémvarsány</option>
+  </select>
+
+<div class="div_szolgaltatasvalaszto">
+          <h1>Válasszon Kedvezően <span style="font-size: 10px">(Hűségidővel vagy Hűségidő nélkül)</span></h1>
+          <table class="paramlist admintable"><tbody><tr><td valign="top" class="key"></td><td class="paramlist_value">                <input name="fizetesi_mod" id="fizetesi_mod" value="" type="hidden">
+                <input name="kedvezmeny" id="kedvezmeny" value="" type="hidden">        
+
+                <select name="fizetesi_mod_select" id="fizetesi_mod_select" class="fizetesi_mod_select_ alapinput" onchange="$('fizetesi_mod').value=this.value; $('adminForm').submit()"><option value="" selected="selected">Válasszon</option>
+                  <option value="CSOPORTOS_2EV">Kedvezményes ár 2 év hűséggel</option>
+                  <option value="CSEKK">Listaár hűség nélkül</option>
+              </select>                <label for="fizetesi_mod_select"></label>
+                <span class="span_error"></span></td><td></td></tr></tbody></table>     </div>
+
+</div>
+
+<div class="div_kapcsolovalaszto">
+  <h1>Válasszon szolgáltatásaink közül</h1>
+    <table class="paramlist admintable"><tbody><tr><td valign="top" class="key">Szolgáltatás</td><td class="paramlist_value">
+            <div class="megrendeles_tablazat">
+                <div class="tablediv">
+                                        <div class="lab">
+                                        <div class="lab_bal">            <input type="button" onclick="history.back()" value="Vissza">
+
+            <input type="submit" class="btn_kivalaszt" onclick="return ellenorizValasztas()" value="Számol">
+
+            <input type="submit" onclick="$(task).value = 'keep_form';
+                                $('hidden_valasztott').value = '0';
+                                torolszolg()" value="Mást választok">
+            </div>
+                            <div class="lab_jobb"></div>
+                                </div>
+                    
+                   
+                <input id="id_radioKombinalt" name="hidden_szolg[]" value="" type="hidden"></div>
+                    <div class="tvnettel">
+                        <table>
+                            <tbody><tr class="tvnettel_head">
+                                <td class="td1">TV</td>
+                                <td class="td2">Internet</td>
+                                <td class="td3">Telefon</td>
+                            </tr>
+                            <tr class="tvnettel_body">
+                                <td class="td1">                <table>
+                                            <tbody><tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioTv').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioTv', 'nem', this ); setCheckboxHatter();" id="radioTv_73" type="radio" value="73" name="radioTv">
+                            </td>
+                            <td class="tdx2">
+                I. Programcsomag 7 műsor                            </td>
+                            <td class="tdx3">
+                2065 Ft
+                            </td>
+                        </tr>
+                                                <tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioTv').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioTv', 'nem', this ); setCheckboxHatter();" id="radioTv_74" type="radio" value="74" name="radioTv">
+                            </td>
+                            <td class="tdx2">
+                II. Programcsomag 35 műsor                            </td>
+                            <td class="tdx3">
+                4445 Ft
+                            </td>
+                        </tr>
+                                        </tbody></table>
+                <input id="id_radioTv" name="hidden_szolg[]" value="" type="hidden"></td>
+                                <td class="td2">                <table>
+                                            <tbody><tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioInternet').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioInternet', 'nem', this ); setCheckboxHatter();" id="radioInternet_121" type="radio" value="121" name="radioInternet">
+                            </td>
+                            <td class="tdx2">
+                FaluNet 1.2 Díjcs.     2Mbit / 256 Kbit/s                            </td>
+                            <td class="tdx3">
+                2900 Ft
+                            </td>
+                        </tr>
+                                                <tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioInternet').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioInternet', 'nem', this ); setCheckboxHatter();" id="radioInternet_122" type="radio" value="122" name="radioInternet">
+                            </td>
+                            <td class="tdx2">
+                FaluNet 2.2  Díjcs.   4Mbit / 384 Kbit/s                            </td>
+                            <td class="tdx3">
+                3900 Ft
+                            </td>
+                        </tr>
+                                                <tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioInternet').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioInternet', 'nem', this ); setCheckboxHatter();" id="radioInternet_123" type="radio" value="123" name="radioInternet">
+                            </td>
+                            <td class="tdx2">
+                FaluNet 4.2 Díjcs.            8Mbit / 512 Kbit/s                            </td>
+                            <td class="tdx3">
+                4900 Ft
+                            </td>
+                        </tr>
+                                                <tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioInternet').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioInternet', 'nem', this ); setCheckboxHatter();" id="radioInternet_124" type="radio" value="124" name="radioInternet">
+                            </td>
+                            <td class="tdx2">
+                FaluNet 6.2 Díjcs.            12Mbit / 1024 Kbit/s                            </td>
+                            <td class="tdx3">
+                5900 Ft
+                            </td>
+                        </tr>
+                                                <tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioInternet').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioInternet', 'nem', this ); setCheckboxHatter();" id="radioInternet_126" type="radio" value="126" name="radioInternet">
+                            </td>
+                            <td class="tdx2">
+                FaluNet 12.2 Díjcs.            24Mbit / 2048 Kbit/s                            </td>
+                            <td class="tdx3">
+                7500 Ft
+                            </td>
+                        </tr>
+                                        </tbody></table>
+                <input id="id_radioInternet" name="hidden_szolg[]" value="" type="hidden"></td>
+                                <td class="td3">                <table>
+                                            <tbody><tr class="zoomTip">
+                            <td class="tdx1">
+                                                <input class="" onclick="$('id_radioTelefon').value=this.value; $('hidden_valasztott').value='1'; setvalasztok('radioTelefon', 'igen', this ); setCheckboxHatter();" id="radioTelefon_4" type="radio" value="4" name="radioTelefon">
+                            </td>
+                            <td class="tdx2">
+                FALU-TEL I. Díjcsomag                            </td>
+                            <td class="tdx3">
+                1700 Ft
+                            </td>
+                        </tr>
+                                        </tbody></table>
+                <input id="id_radioTelefon" name="hidden_szolg[]" value="" type="hidden"></td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+
+                </div>
+                <span class="span_error"></span></div></td><td></td></tr></tbody></table>
+<table class="paramlist admintable"><input class="szolg_tipus_ alapinput" name="szolg_tipus" id="szolg_tipus" type="hidden" value="Kábel-TV"> <input class="kerelem_tipus_ alapinput" name="kerelem_tipus" id="kerelem_tipus" type="hidden" value="Megrendelés"> 
+</table>
+</div>
+
+
+
+
+
+
 <footer>
 <div class="footr">
   <p class="contactus1">
